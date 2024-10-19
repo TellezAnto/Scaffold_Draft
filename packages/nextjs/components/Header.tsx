@@ -24,6 +24,14 @@ export const menuLinks: HeaderMenuLink[] = [
     href: "/debug",
     icon: <BugAntIcon className="h-4 w-4" />,
   },
+  {
+    label: "Verify",
+    href: "/review",
+  },
+  {
+    label: "Liquidity",
+    href: "/liquidity",
+  },
 ];
 
 export const HeaderMenuLinks = () => {
@@ -90,11 +98,10 @@ export const Header = () => {
         </div>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
           <div className="flex relative w-10 h-10">
-            <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
+            <Image alt="SE2 logo" className="cursor-pointer rounded-lg" fill src="/log.jpg" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">Scaffold-ETH</span>
-            <span className="text-xs">Ethereum dev stack</span>
+            <span className="font-bold leading-tight">Chain Waves</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
